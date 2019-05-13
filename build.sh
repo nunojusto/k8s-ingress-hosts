@@ -13,7 +13,7 @@ mkdir -p release
 
 for OS in ${BUILD_PLATFORMS[@]}; do
   for ARCH in ${BUILD_ARCHS[@]}; do
-    NAME="glasses-$OS-$ARCH"
+    NAME="k8s-ingress-hosts-$OS-$ARCH"
     echo "Building for $OS/$ARCH"
     GOARCH=$ARCH GOOS=$OS CGO_ENABLED=0 $GO_BUILD_CMD -ldflags "$GO_BUILD_LDFLAGS"\
      -o "release/$NAME" glasses.go
