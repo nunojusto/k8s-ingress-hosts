@@ -39,8 +39,8 @@ var (
 )
 
 const (
-	sectionStart = "# generated using glasses start #"
-	sectionEnd   = "# generated using glasses end #\n"
+	sectionStart = "# generated using k8s-ingress-hosts start #"
+	sectionEnd   = "# generated using k8s-ingress-hosts end #\n"
 )
 
 func homeDir() string {
