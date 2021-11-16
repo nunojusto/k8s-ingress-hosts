@@ -27,4 +27,5 @@ jobs:
         binary_name: "k8s-ingress-hosts"
         ldflags: -s -w -X main.version=${RELEASE_TAG}
         extra_files: LICENSE README.md
+        overwrite: true
 
