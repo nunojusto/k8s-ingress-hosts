@@ -5,6 +5,20 @@ Get all the [Ingress](https://kubernetes.io/docs/concepts/services-networking/in
 
 ## Installation
 
+MacOS:
+```bash
+curl -s https://api.github.com/repos/getditto/k8s-ingress-hosts/releases/latest | jq '.assets[] | .browser_download_url | select(endswith("darwin-amd64.tar.gz"))' -r | xargs curl -L -o k8s-ingress-hosts.tar.gz
+tar -xzf k8s-ingress-hosts.tar.gz
+mv k8s-ingress-hosts /usr/local/bin/k8s-ingress-hosts
+```
+
+Linux:
+```bash
+curl -s https://api.github.com/repos/getditto/k8s-ingress-hosts/releases/latest | jq '.assets[] | .browser_download_url | select(endswith("linux-amd64.tar.gz"))' -r | xargs curl -L -o k8s-ingress-hosts.tar.gz
+tar -xzf k8s-ingress-hosts.tar.gz
+mv k8s-ingress-hosts /usr/local/bin/k8s-ingress-hosts
+```
+
 src
 ```
 go get -u github.com/getditto/k8s-ingress-hosts
