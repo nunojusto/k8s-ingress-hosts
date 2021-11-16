@@ -1,8 +1,9 @@
 module github.com/solsson/k8s-ingress-hosts
 
-go 1.12
+go 1.16
 
 require (
-	k8s.io/apimachinery v0.0.0-20190511023455-ad85901afca0
-	k8s.io/client-go v0.0.0-20190511023711-c6f3777976ad
+	k8s.io/api v0.22.3 // indirect
+	k8s.io/apimachinery v0.22.3
+	k8s.io/client-go v0.22.3
 )
