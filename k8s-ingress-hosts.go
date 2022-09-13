@@ -131,7 +131,7 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Printf("Glasses\n url: %s\n version: %s", versionUrl, version)
+		fmt.Printf("k8s-ingress-hosts\n url: %s\n version: %s", versionUrl, version)
 		os.Exit(2)
 	}
 
